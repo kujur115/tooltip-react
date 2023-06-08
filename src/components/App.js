@@ -1,6 +1,14 @@
-
+import Tooltip from "./Tooltip";
 function App() {
-  return <div className="App"></div>;
+  let position = "right";
+  let text = "this is a tooltip";
+  return (
+    <div className="App">
+      <Tooltip text={text} position={position}>
+        <button>Hover me</button>
+      </Tooltip>
+    </div>
+  );
 }
 
 export default App;
